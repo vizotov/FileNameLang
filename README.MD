@@ -19,7 +19,7 @@ a special sequence of valid characters, and the reverse transformation to replac
    |:---:|:---:|
    |*|(STAR)|
    |&#124;|(PIPE)|
-   |\\|(BSLASH)|
+   |&#92;|(BSLASH)|
    |:|(COLON)|
    |\"|(QUOT)|
    |<|(LANGLE)|

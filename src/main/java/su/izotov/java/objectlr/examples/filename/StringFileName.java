@@ -1,10 +1,12 @@
 package su.izotov.java.objectlr.examples.filename;
 
 import su.izotov.java.objectlr.RecognitionException;
+import su.izotov.java.objectlr.Sense;
 import su.izotov.java.objectlr.Sentence;
 import su.izotov.java.objectlr.examples.filename.lang.FNLang;
 import su.izotov.java.objectlr.examples.filename.lang.FileNameLang;
 import su.izotov.java.objectlr.examples.filename.lang.TextFileName;
+import su.izotov.java.objectlr.tokens.Tokens;
 
 /**
  * the file name, backed by the simple string, which must correspond filesystem's naming
@@ -45,5 +47,13 @@ public class StringFileName
   @Override public String toStringRepresentation()
       throws RecognitionException {
     return this.toObject().toTextRepresentation();
+  }
+
+  @Override public Tokens tokens() {
+    return new FNLang().tokens();
+  }
+
+  @Override public Sense textToken(final String text) {
+    return new FNLang().textToken(text);
   }
 }

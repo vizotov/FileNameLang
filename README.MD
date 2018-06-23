@@ -100,21 +100,21 @@ public class TextFileName
   }
 }
   ```
- ## Lang interface
+ ## Language
 Now we implement the language itself:
   ```java
-import su.izotov.java.objectlr.Lang;
+
 import su.izotov.java.objectlr.Sense;
 import su.izotov.java.objectlr.tokens.Tokens;
 
 public interface FileNameLang
-    extends Lang {
+    extends Sense {
   @Override default Tokens tokens() {
     // We do not have tokens yet
     throw new UnsupportedOperationException("#tokens");
   }
 
-  @Override default Sense textEnvelope(String text) {
+  @Override default Sense textToken(String text) {
     return new TextFileName(text);
   }
 }
@@ -123,7 +123,7 @@ public interface FileNameLang
  Create a set of tokens of the recognized language. These are replaced characters, 
   which are not allowed in file names. Each character in the above table must have an object that
  implements the **Token** interface. Each **Token** recognizes 
-  the following text, implementing the interface **Lang**.
+  the following text, implementing the interface **Sense**.
   
   All tokens of our language must recognize each other, that is, the language as a whole. 
   Therefore, they must implement the **FileNameLang** interface:
@@ -252,7 +252,7 @@ public final class UnderScore
 Now we add the list of tokens to the language. The interface takes the following form:
  ```java
 public interface FileNameLang
-    extends Lang {
+    extends Sense {
   /**
    * It is an example without any optimisations
    */
@@ -271,7 +271,7 @@ public interface FileNameLang
         , new UnderScore());
   }
 
-  @Override default Sense textEnvelope(String text) {
+  @Override default Sense textToken(String text) {
     return new TextFileName(text);
   }
 }

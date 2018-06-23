@@ -1,6 +1,6 @@
 package su.izotov.java.objectlr.examples.filename.lang;
 
-import su.izotov.java.objectlr.Lang;
+
 import su.izotov.java.objectlr.Sense;
 import su.izotov.java.objectlr.examples.filename.lang.token.BSlash;
 import su.izotov.java.objectlr.examples.filename.lang.token.Colon;
@@ -24,7 +24,7 @@ import su.izotov.java.objectlr.tokens.TokensSet;
  * @since 1.0
  */
 public interface FileNameLang
-    extends Lang {
+    extends Sense {
   /**
    * It is an example without any optimisations
    */
@@ -43,7 +43,7 @@ public interface FileNameLang
         , new UnderScore());
   }
 
-  @Override default Sense textEnvelope(String text) {
+  @Override default Sense textToken(String text) {
     return new TextFileName(text);
   }
 }

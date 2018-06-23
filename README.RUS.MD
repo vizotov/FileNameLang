@@ -98,21 +98,21 @@ public class TextFileName
   }
 }
   ```
- ## Интерфейс Lang
+ ## Сам язык
  Теперь реализуем сам язык:
   ```java
-import su.izotov.java.objectlr.Lang;
+
 import su.izotov.java.objectlr.Sense;
 import su.izotov.java.objectlr.tokens.Tokens;
 
 public interface FileNameLang
-    extends Lang {
+    extends Sense {
   @Override default Tokens tokens() {
     // We do not have tokens yet
     throw new UnsupportedOperationException("#tokens");
   }
 
-  @Override default Sense textEnvelope(String text) {
+  @Override default Sense textToken(String text) {
     return new TextFileName(text);
   }
 }
@@ -120,7 +120,7 @@ public interface FileNameLang
  ## Интерфейс Token
  Создаём набор токенов распознаваемого языка. В качестве них используются заменённые символы, 
  которых не бывает в именах файлов. Каждому символу из вышеприведённой таблицы должен соответствовать объект, реализующий интерфейс **Token**. Каждый **Token** сам распознаёт 
- следующий за ним текст, реализуя интерфейс **Lang**.
+ следующий за ним текст, реализуя интерфейс **Sense**.
  
  Все токены нашего языка должны распознавать друг друга, то есть весь язык в целом. 
  Следовательно, они должны реализовывать интерфейс **FileNameLang**:
@@ -249,7 +249,7 @@ public final class UnderScore
 Теперь добавляем список токенов в язык. Интерфейс принимает следующий вид:
  ```java
 public interface FileNameLang
-    extends Lang {
+    extends Sense {
   /**
    * It is an example without any optimisations
    */
@@ -268,7 +268,7 @@ public interface FileNameLang
         , new UnderScore());
   }
 
-  @Override default Sense textEnvelope(String text) {
+  @Override default Sense textToken(String text) {
     return new TextFileName(text);
   }
 }

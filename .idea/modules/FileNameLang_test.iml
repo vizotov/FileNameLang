@@ -10,7 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="FileNameLang_main" />
-    <orderEntry type="library" name="Gradle: su.izotov:ObjectLR:0.1" level="project" />
+    <orderEntry type="library" name="Gradle: su.izotov:ObjectLR:0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.7" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: su.izotov:JDoubleDispatch:0.3" level="project" />

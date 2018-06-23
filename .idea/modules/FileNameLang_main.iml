@@ -9,7 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: su.izotov:ObjectLR:0.1" level="project" />
+    <orderEntry type="library" name="Gradle: su.izotov:ObjectLR:0.3" level="project" />
     <orderEntry type="library" name="Gradle: su.izotov:JDoubleDispatch:0.3" level="project" />
     <orderEntry type="library" name="Gradle: ru.vyarus:generics-resolver:2.0.1" level="project" />
   </component>

@@ -14,7 +14,7 @@ import su.izotov.java.objectlr.examples.filename.lang.token.Slash;
 import su.izotov.java.objectlr.examples.filename.lang.token.Star;
 import su.izotov.java.objectlr.examples.filename.lang.token.UnderScore;
 import su.izotov.java.objectlr.tokens.Tokens;
-import su.izotov.java.objectlr.tokens.TokensSet;
+import su.izotov.java.objectlr.tokens.TokensOf;
 
 /**
  * the filename language
@@ -29,7 +29,7 @@ public interface FileNameLang
    * It is an example without any optimisations
    */
   @Override default Tokens tokens() {
-    return new TokensSet(
+    return new TokensOf(
         new BSlash()//
         , new Colon()//
         , new LAngle()//

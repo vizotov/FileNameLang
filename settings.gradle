@@ -1,2 +1,3 @@
 rootProject.name = 'FileNameLang'
-
+include ':ObjectLR'
+project(':ObjectLR').projectDir = new File(settingsDir, '../ObjectLR')

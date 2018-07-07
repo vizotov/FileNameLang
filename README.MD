@@ -257,7 +257,7 @@ public interface FileNameLang
    * It is an example without any optimisations
    */
   @Override default Tokens tokens() {
-    return new TokensSet(
+    return new TokensOf(
         new BSlash()//
         , new Colon()//
         , new LAngle()//

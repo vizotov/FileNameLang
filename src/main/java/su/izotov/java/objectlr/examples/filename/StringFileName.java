@@ -56,4 +56,9 @@ public class StringFileName
   @Override public Sense textToken(final String text) {
     return new FNLang().textToken(text);
   }
+
+  @Override
+  public String toSource() {
+    return this.toString();
+  }
 }

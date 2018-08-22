@@ -14,11 +14,11 @@ repositories {
 }
 
 dependencies {
-    compile project(':ObjectLR')
-  //compile 'su.izotov:ObjectLR:0.4'
+    //compile project(':ObjectLR')
+  compile 'su.izotov:ObjectLR:0.6'
   //compile name: 'ObjectLR-0.5'
-    testCompile project(':ObjectLR')
-  //testCompile 'su.izotov:ObjectLR:0.4'
+   // testCompile project(':ObjectLR')
+  testCompile 'su.izotov:ObjectLR:0.6'
   //testCompile name: 'ObjectLR-0.5'
   //testCompile 'su.izotov:JDoubleDispatch:0.3'
     testCompile 'org.apache.commons:commons-lang3:3.7'

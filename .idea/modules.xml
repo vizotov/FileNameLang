@@ -5,9 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileNameLang.iml" filepath="$PROJECT_DIR$/.idea/modules/FileNameLang.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileNameLang_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FileNameLang_main.iml" group="FileNameLang" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FileNameLang_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FileNameLang_test.iml" group="FileNameLang" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1275334509/ObjectLR.iml" filepath="$PROJECT_DIR$/.idea/modules/-1275334509/ObjectLR.iml" group="ObjectLR" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1275334509/ObjectLR_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1275334509/ObjectLR_main.iml" group="ObjectLR" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1275334509/ObjectLR_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1275334509/ObjectLR_test.iml" group="ObjectLR" />
     </modules>
   </component>
 </project>

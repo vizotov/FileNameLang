@@ -20,4 +20,8 @@ public class FNLang
     return new TextFileName(token.toTextRepresentation());
   }
 
+  @Override
+  public String toSource() {
+    return "";
+  }
 }
